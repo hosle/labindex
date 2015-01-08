@@ -1,5 +1,5 @@
 /* Styles for dialog window */
-#small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5,#small-dialog6,#small-dialog7,#small-dialog8, #hezhenyu-dialog{
+#small-dialog,#small-dialog1,#small-dialog2,#small-dialog4,#small-dialog5,#small-dialog6,#small-dialog7,#small-dialog8, #hezhenyu-dialog{
 	background: white;
 	padding:20px;
 	text-align: left;
@@ -8,6 +8,15 @@
 	position: relative;
 	text-align:center;
 	
+}
+#small-dialog3{
+	background: white;
+	padding:20px;
+	text-align: left;
+	max-width: 750px;
+	margin: 40px auto;
+	position: relative;
+	text-align:center;
 }
 #member-dialog{
     background: white;
