@@ -697,6 +697,15 @@ div#offices{
 	min-height:780px;
 	margin-top: -105px;
 }
+div#news{
+	background: url(../images/bg2.png) #ECF0F1 100% 100%;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	min-height:780px;
+	margin-top: -105px;
+}
 .map{
 	margin: 0 auto;
 	text-align: center;
@@ -1567,6 +1576,12 @@ form{
 	background: url(../images/bg2.png) #ECF0F1 no-repeat;
 	background-size: 100% 100%;
 	}
+	
+	div#news {
+	min-height: 640px;
+	background: url(../images/bg2.png) #ECF0F1 no-repeat;
+	background-size: 100% 100%;
+	}
 	.client-section lable {
 	top: 41%;
 	border-bottom: 3px solid#343433;
@@ -2106,4 +2121,19 @@ form{
 	margin-left: 8%;
 	display: none;
 	}
+}
+
+#lunwen{
+	color:#000;
+	width:80%;
+	text-align:center;
+	margin:0 auto;
+}
+
+#newslist{
+	color:#FFF;
+	width:100px;
+	text-align:center;
+	margin:auto;
+
 }
