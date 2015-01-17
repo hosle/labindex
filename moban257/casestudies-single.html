@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- *************************************************************************
+**************************   STYLE SHEET   *******************************
+************************************************************************** -->
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+
+<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+
+<title>感知计算实验室 - High传</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+ <!-- *************************************************************************
+*****************                FAVICON               ********************
+************************************************************************** -->
+
+<link rel="shortcut icon" href="img/favicon.png" />
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+<!-- *************************************************************************
+**************************        JS       *******************************
+************************************************************************** -->
+<script type="text/javascript" src="js/jquery.js"> </script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"> </script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"> </script>
+<script type="text/javascript" src="js/hoverIntent.js"> </script>
+<script type="text/javascript" src="js/jquery.sfmenu.js"> </script>
+<script type="text/javascript" src="js/retina.js"> </script>
+<script type="text/javascript" src="js/custom.js"> </script>
+<script type="text/javascript" src="js/jquery.fancybox.js"> </script>
+
+
+
+<!-- *************************************************************************
+******************     THESE ARE THE SCRIPT CALLS    ***********************
+************************************************************************** -->
+<script type="text/javascript">
+jQuery(window).load(function() {
+	 
+// Create the dropdown base
+jQuery("<select />").appendTo(".topmenu");
+
+// Create default option "Go to..."
+jQuery("<option />", {
+ "selected": "selected",
+ "value"   : "",
+ "text"    : "Menu"
+}).appendTo(".topmenu select");
+
+// Populate dropdown with menu items
+jQuery(".topmenu a").each(function() {
+var el = jQuery(this);
+jQuery("<option />", {
+   "value"   : el.attr("href"),
+   "text"    : el.text()
+}).appendTo(".topmenu select");
+});
+
+// To make dropdown actually work
+// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+jQuery(".topmenu select").change(function() {
+window.location = jQuery(this).find("option:selected").val();
+});
+	
+jQuery('.fancybox').fancybox();
+	
+});
+	
+</script>
+
+</head>
+	<body>
+
+
+<!-- Start of top wrapper 
+<div id="top_wrapper">
+
+<!-- Start of content wrapper 
+<div class="content_wrapper">
+
+<!-- Start of topsubmenu
+<div class="topsubmenu">
+
+<ul>
+<li><a href="#">Work With Us</a></li>
+<li><a href="#">Development Cycle</a></li>
+<li><a href="#">Affiliates</a></li>
+<li><a href="#">Client Login</a></li>
+</ul>
+
+</div> End of topsubmenu -->
+
+<!-- Start of searchbox 
+<div id="searchbox">
+
+<!-- Start of search box 
+
+<form role="search" method="get" id="searchform" action="#">
+
+<input type="text" value="search" id="searchBox" name="s"  onblur="if(this.value == '') { this.value = 'search'; }" onFocus="if(this.value == 'search') { this.value = ''; }" />
+<span class="searchme"></span>
+</form>
+
+ <!--End of searchbox -->
+
+<!--</div> End of searchbox -->
+
+<!--</div> End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of top wrapper -->
+
+<!-- Start of header wrapper -->
+<div id="header_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of logo -->
+<div id="logo">
+
+<p style="color:#FFF; font-size:28px; vertical-align:middle"><a href="#"><img src="../images/logowebsite.png" width="8%" height="8%"/></a>感知计算实验室</p>
+
+</div><!-- End of logo -->
+
+<!-- Start of top menu wrapper -->
+<div class="topmenuwrapper">
+
+<!-- Start of topmenu -->
+<nav class="topmenu"> 
+ 
+<ul class="sf-menu">
+
+<li><a href="../index.html">主页</a>
+
+<!--<ul class="sub-menu">
+<li><a href="index2.html">Alternative Home</a></li>
+<li><a href="columns.html">Columns</a></li>
+<li><a href="styles.html">Styles</a></li>
+<li><a href="rightsidebar.html">Right Sidebar</a></li>
+<li><a href="leftsidebar.html">Left Sidebar</a></li>
+<li><a href="fullwidth.html">Full Width</a></li>
+</ul>-->
+
+</li>
+        
+<li><a href="../index.html">研究领域</a>
+<!--<ul class="sub-menu">
+<li><a href="careers-single.html">Careers Single</a></li>
+</ul>-->
+</li>
+
+<li><a href="../index.html">实验室成果</a>
+<ul class="sub-menu">
+<li><a class="active" href="casestudies-single.html">High传</a></li>
+</ul>
+</li>
+
+<li><a href="../index.html">科研团队</a>
+<!--<ul class="sub-menu">
+<li><a href="staff-single.html">Staff Single</a></li>
+</ul>-->
+</li>
+
+<li><a href="../index.html">招生信息</a>
+
+</li>
+
+<li><a href="../index.html">联系方式</a></li>
+
+</ul>
+
+</nav><!-- End of topmenu -->
+
+<!-- Start of header phone 
+<div class="header_phone">
+Toll Free: 0800 123 456 7890
+</div> End of header phone -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of top menu wrapper -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of header wrapper -->
+
+<!-- Start of breadcrumb wrapper -->
+<div class="breadcrumb_wrapper">
+
+<!-- Start of breadcrumb -->
+<div class="breadcrumb">
+
+<ul>
+<li><a href="index.html">主页</a> &nbsp; / &nbsp;</li>
+<li><a href="case-studies.html">实验室成果</a> &nbsp; / &nbsp;</li>
+<li>High传</li>
+
+</ul>
+
+</div><!-- End of breadcrumb -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of breadcrumb wrapper -->
+
+<!-- Start of content wrapper -->
+<div id="contentwrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+
+<br><br>
+
+<h2>HIGH传：新一代互联网视频传输解决方案</h2>
+
+<h5>行业背景</h5>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在中国乃至世界范围内，随着互联网高速发展，实时视频数据在高峰值时达到互联网全部数据的一半比例，移动互联网对视频需求更是呈现指数式增长。随着如Android、苹果手机等智能移动终端的加入，互联网视频接收终端越来越多元化。视频的质量也随着硬件、视频内容生产方的发展不断提高。但网络速度、无线网络的不稳定又极大影响了用户的体验。所以，使用能兼容各种视频播放智能平台、能减缓无线网络不稳定性对视频流畅播放影响、并允许运营商自定制的传输解决方案是目前行业、内容生产商、网络运营商及用户的共同期盼。</p>
+
+<h5>技术创新</h5>
+
+<ul style="list-style-type:circle">
+	<li>	国际同步：采用最新ISO/IEC 23009-1 MPEG-DASH国际标准；</li>
+    <li>	流畅播放：播放端视频质量自适应网络速度，实现视频流畅播放（如下图所示）；</li>
+    <li>	跨平台：采用HTTP协议，在Web网页端、手机网页端及移动APP均能快速部署；</li>
+    <li>	个性定制：运营商可根据用户播放习惯或需求在视频中间加入定制信息。</li>
+</ul>
+
+<img src="img/myimg/dash1.PNG" width="718" height="368" alt="case study image 1" />
+<br>
+<h5>方案设计及子模块</h5>
+<p>系统方案整体由服务器及客户端组成。若采用浏览器方式访问，则无需部署客户端。（如下图所示）
+在此基础方案下，可添加以下子模块：
+</p>
+
+<ul style="list-style-type:circle">
+	<li>	额外信息植入模块：加入如广告等分片信息。</li>
+    <li>	自主选择模块：客户端可自主选择视频源切换，如监控视频的角度切换。</li>
+    <li>	加密模块：内容提供商加入自己的加密方法，保护内容</li>
+   
+</ul>
+
+<img src="img/myimg/dash2.PNG" width="80%" height="80%" alt="case study image 1" />
+<br>
+<h5>应用领域</h5>
+<p>“HIGH传”视频传输解决方案具有巨大的应用潜力：
+</p>
+
+<ul style="list-style-type:circle">
+	<li>	视频点播：构建自己的视频点播站点；</li>
+    <li>	视频直播：实现互联网流媒体视频直播；</li>
+    <li>	智能电视：网络电视接入后共享同一格式视频资源；</li>
+    <li>	广告定制：在视频流媒体中加入客户端驱动的广告信息分片；</li>
+    <li>	订阅分发：给不同用户广播不同的视频资源。</li>
+</ul>
+
+<!-- Start of one half first 
+<div class="one_half_first">
+<img src="img/myimg/dash1.PNG" width="718" height="368" alt="case study image 1" />
+
+</div><!-- End of one half first -->
+
+<!-- Start of one half 
+<div class="one_half">
+<img src="img/case-study-single2.jpg" width="475" height="289" alt="case study image 2" />
+
+</div><!-- End of one half -->
+
+
+
+<!-- Start of button red -->
+<div class="button_red">
+<a href="../index.html">返回</a>
+
+</div><!-- End of button red -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of content wrapper -->
+
+<!-- Start of bottom wrapper 
+<div id="bottom_wrapper">
+
+<!-- Start of content wrapper 
+<div class="content_wrapper">
+
+<!-- Start of one fourth first 
+<div class="one_fourth_first">
+<h5>Company</h5>
+
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Press</a></li>
+<li><a href="#">Partners</a></li>
+<li><a href="#">Employment Opportunities</a></li>
+</ul>
+
+</div><!-- End of one fourth first -->
+
+<!-- Start of one fourth 
+<div class="one_fourth">
+<h5>Resources</h5>
+
+<ul>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Showcases</a></li>
+</ul>
+
+</div><!-- End of one fourth -->
+
+<!-- Start of one fourth 
+<div class="one_fourth">
+<h5>Get in touch</h5>
+
+<ul>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Staff Directory</a></li>
+</ul>
+
+</div><!-- End of one fourth -->
+
+<!-- Start of one fourth 
+<div class="one_fourth">
+<h5>Legal</h5>
+
+<ul>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Staff Directory</a></li>
+</ul>
+
+</div><!-- End of one fourth 
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix <div class="clear"></div>
+
+</div><!-- End of bottom wrapper -->
+
+<!-- Start of copyright wrapper -->
+<div id="copyright_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of copyright message -->
+<div class="copyright_message">
+Copyright &copy; 2015.ACL@HITsz All rights reserved.
+</div><!-- End of copyright message -->
+
+<!-- Start of social icons -->
+<div class="social_icons">
+
+<!--<a href="#"><img src="img/social/white/dribbble.png" width="30" height="30" alt="Dribbble" /></a>
+<a href="#"><img src="img/social/white/facebook.png" width="30" height="30" alt="Facebook" /></a>
+<a href="#"><img src="img/social/white/gplus.png" width="30" height="30" alt="GooglePlus" /></a>
+<a href="#"><img src="img/social/white/instagram.png" width="30" height="30" alt="Instagram" /></a>
+<a href="#"><img src="img/social/white/linkedin.png" width="30" height="30" alt="LinkedIn" /></a>
+<a href="#"><img src="img/social/white/pinterest.png" width="30" height="30" alt="Pinterest" /></a>
+<a href="#"><img src="img/social/white/twitter.png" width="30" height="30" alt="Twitter" /></a>-->
+
+</div><!-- End of social icons -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of copyright wrapper -->
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

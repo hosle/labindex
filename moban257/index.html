@@ -1,0 +1,603 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- *************************************************************************
+**************************   STYLE SHEET   *******************************
+************************************************************************** -->
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+
+<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+
+<title>Business Essentials</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+ <!-- *************************************************************************
+*****************                FAVICON               ********************
+************************************************************************** -->
+
+<link rel="shortcut icon" href="img/favicon.png" />
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+<!-- *************************************************************************
+**************************        JS       *******************************
+************************************************************************** -->
+<script type="text/javascript" src="js/jquery.js"> </script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"> </script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"> </script>
+<script type="text/javascript" src="js/hoverIntent.js"> </script>
+<script type="text/javascript" src="js/jquery.sfmenu.js"> </script>
+<script type="text/javascript" src="js/retina.js"> </script>
+<script type="text/javascript" src="js/custom.js"> </script>
+<script type="text/javascript" src="js/jquery.fancybox.js"> </script>
+
+
+
+<!-- *************************************************************************
+******************     THESE ARE THE SCRIPT CALLS    ***********************
+************************************************************************** -->
+<script type="text/javascript">
+jQuery(window).load(function() {
+	
+jQuery('.slider').flexslider();
+ 
+// Create the dropdown base
+jQuery("<select />").appendTo(".topmenu");
+
+// Create default option "Go to..."
+jQuery("<option />", {
+ "selected": "selected",
+ "value"   : "",
+ "text"    : "Menu"
+}).appendTo(".topmenu select");
+
+// Populate dropdown with menu items
+jQuery(".topmenu a").each(function() {
+var el = jQuery(this);
+jQuery("<option />", {
+   "value"   : el.attr("href"),
+   "text"    : el.text()
+}).appendTo(".topmenu select");
+});
+
+// To make dropdown actually work
+// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+jQuery(".topmenu select").change(function() {
+window.location = jQuery(this).find("option:selected").val();
+});
+	
+jQuery('.fancybox').fancybox();
+	
+});
+	
+</script>
+
+</head>
+	<body>
+
+
+<!-- Start of top wrapper -->
+<div id="top_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of topsubmenu -->
+<div class="topsubmenu">
+
+<ul>
+<li><a href="#">Work With Us</a></li>
+<li><a href="#">Development Cycle</a></li>
+<li><a href="#">Affiliates</a></li>
+<li><a href="#">Client Login</a></li>
+</ul>
+
+</div><!-- End of topsubmenu -->
+
+<!-- Start of searchbox -->
+<div id="searchbox">
+
+<!-- Start of search box -->
+
+<form role="search" method="get" id="searchform" action="#">
+
+<input type="text" value="search" id="searchBox" name="s"  onblur="if(this.value == '') { this.value = 'search'; }" onFocus="if(this.value == 'search') { this.value = ''; }" />
+<span class="searchme"></span>
+</form>
+
+<!-- End of searchbox -->
+
+</div><!-- End of searchbox -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of top wrapper -->
+
+<!-- Start of header wrapper -->
+<div id="header_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of logo -->
+<div id="logo">
+<a href="#"><img src="img/toplogo.png" width="213" height="33" alt="Business Essentials" /></a>
+
+</div><!-- End of logo -->
+
+<!-- Start of top menu wrapper -->
+<div class="topmenuwrapper">
+
+<!-- Start of topmenu -->
+<nav class="topmenu">
+ 
+<ul class="sf-menu">
+
+<li><a class="active" href="index.html">Home</a>
+
+<ul class="sub-menu">
+<li><a href="index2.html">Alternative Home</a></li>
+<li><a href="columns.html">Columns</a></li>
+<li><a href="styles.html">Styles</a></li>
+<li><a href="rightsidebar.html">Right Sidebar</a></li>
+<li><a href="leftsidebar.html">Left Sidebar</a></li>
+<li><a href="fullwidth.html">Full Width</a></li>
+</ul>
+
+</li>
+        
+<li><a href="careers.html">Careers</a>
+<ul class="sub-menu">
+<li><a href="careers-single.html">Careers Single</a></li>
+</ul>
+</li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="staff.html">Staff</a>
+<ul class="sub-menu">
+<li><a href="staff-single.html">Staff Single</a></li>
+</ul>
+</li>
+
+<li><a href="case-studies.html">Case Studies</a>
+<ul class="sub-menu">
+<li><a href="casestudies-single.html">Case Studies Single</a></li>
+</ul>
+</li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav><!-- End of topmenu -->
+
+<!-- Start of header phone -->
+<div class="header_phone">
+Toll Free: 0800 123 456 7890
+
+</div><!-- End of header phone -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of top menu wrapper -->
+
+<!-- Start of slider wrapper -->
+<section class="slider_wrapper">
+
+<!-- Start of slider -->
+<section class="slider">
+
+<ul class="slides">
+
+
+<li>
+<a href="#"><img src="img/image_slide2.png" alt="image slide 2"></a>
+</li>
+
+<li>
+<a href="#"><img src="img/image_slide.png" alt="image slide"></a>
+</li>
+
+
+<li>
+<a href="#"><img src="img/image_slide3.png" alt="image slide"></a>
+</li>
+
+<li>
+
+<!-- Start of one third first -->
+<div class="one_third_first">
+<a href="#" target="_blank" title="Slide Title">
+<img src="img/sliderimage1.png" alt="slide" />
+</a>
+</div><!-- End of one third first -->
+
+<!-- Start of two third -->
+<div class="two_third">
+<h2>Live, Interactive data anywhere.</h2>
+<p>Using the <a href="#">Golden Ratio</a> for formatting font and line heights it produces easier to read content for your users. This is Photoshop's version  of Lorem Ipsum.</p>
+
+<!-- Start of button red -->
+<div class="button_red">
+<a href="#">Button For Linking</a>
+</div><!-- End of button red -->
+
+</div><!-- End of two third -->
+</li>
+    
+</ul>
+    
+</section><!-- End of slider -->
+
+<!-- Start of clear fix --><div class="clear"></div>
+
+</section><!-- End of slider wrapper -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of header wrapper -->
+
+<!-- Start of message wrapper -->
+<div id="message_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of contentleft -->
+<div class="contentleft">
+<p>Sign-up today for a FREE instant account with no monthly commitment!</p>
+
+</div><!-- End of contentleft -->
+
+<!-- Start of contentright -->
+<div class="contentright">
+
+<!-- Start of button green -->
+<div class="button_green_image">
+<a href="#">No Credit Card Required</a>
+
+</div><!-- End of button green -->
+
+</div><!-- End of contentright -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of message wrapper -->
+
+<!-- Start of content wrapper -->
+<div id="contentwrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of one half first -->
+<div class="one_half_first">
+<h2 class="green"><a href="#">We work with leading tech companies.</a></h2>
+
+<!-- Start of intro -->
+<div class="intro">
+Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye.
+
+</div><!-- End of intro -->
+
+<hr />
+
+<p>Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+
+</div><!-- End of one half first -->
+
+<!-- Start of one half -->
+<div class="one_half">
+<img class="alignright" src="img/prod_shot1.png" width="389" height="437" alt="product shot 1" />
+
+</div><!-- End of one half -->
+
+<div class="clear"></div>
+
+<hr />
+
+<!-- Start of one half first -->
+<div class="one_half_first">
+<h2><a href="#">526,000,000 reports.</a></h2>
+
+<p>Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+
+</div><!-- End of one half first -->
+
+<!-- Start of one half -->
+<div class="one_half">
+<img class="alignright" src="img/product_graph.png" width="463" height="229" alt="product graph" />
+
+</div><!-- End of one half -->
+
+<div class="clear"></div>
+
+<hr />
+
+<!-- Start of one half first -->
+<div class="one_half_first">
+<img class="alignleft" src="img/map.png" width="539" height="303" alt="map" />
+
+</div><!-- End of one half first -->
+
+<!-- Start of one half -->
+<div class="one_half">
+<h2 class="blue"><a href="#">Worldwide reporting every minute, everyday.</a></h2>
+
+<p>Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+
+<!-- Start of button blue -->
+<div class="button_blue">
+<a href="#">View example reports</a>
+
+</div><!-- End of button blue -->
+
+</div><!-- End of one half -->
+
+<div class="clear"></div>
+
+<hr />
+
+<!-- Start of one half first -->
+<div class="one_half_first">
+<h3 class="blue">Our clients</h3>
+
+<!-- Start of view all -->
+<div class="viewall">
+<a href="#">View all</a>
+
+</div><!-- End of view all -->
+
+<!-- Start of homepage slider section -->
+<div class="homepage_slider_section">
+
+<!-- Start of slider -->
+<section class="slider">
+
+<ul class="slides">
+
+<li>
+<a href="#" target="_blank" title="Client Slide Title">
+<img src="img/clientlogos1.png" alt="client slide" />
+</a>
+</li>
+
+<li>
+<a href="#" target="_blank" title="Client Slide Title 1">
+<img src="img/clientlogos1.png" alt="client slide 1" />
+</a>
+</li>
+
+<li>
+<a href="#" target="_blank" title="Client Slide Title 3">
+<img src="img/clientlogos1.png" alt="client slide 3" />
+</a>
+</li>
+
+<li>
+<a href="#" target="_blank" title="Client Slide Title 4">
+<img src="img/clientlogos1.png" alt="client slide 4" />
+</a>
+</li>
+    
+</ul>
+    
+</section><!-- End of slider -->
+
+</div><!-- End of homepage slider section -->
+
+</div><!-- End of one half first -->
+<!-- Start of one half -->
+<div class="one_half">
+<h3 class="blue">Latest blog</h3>
+
+<!-- Start of view all -->
+<div class="viewall">
+<a href="#">View all</a>
+
+</div><!-- End of view all -->
+
+<!-- Start of homepage slider section -->
+<div class="homepage_slider_section">
+
+<!-- Start of slider -->
+<section class="slider">
+
+<ul class="slides">
+
+<li>
+<img src="img/blogentry1.png" alt="blog slide" />
+<div class="flex-caption">
+<div class="contentright">
+April 20, 2013
+</div>
+<h4>Data mining your reports</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
+</p>
+<a href="#">Continue Reading</a>
+</div>
+
+</li>
+
+<li>
+<img src="img/blogentry1.png" alt="blog slide 1" />
+<div class="flex-caption">
+<div class="contentright">
+April 20, 2013
+</div>
+<h4>Data mining your reports</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
+</p>
+<a href="#">Continue Reading</a>
+</div>
+
+</li>
+
+<li>
+<img src="img/blogentry1.png" alt="blog slide 3" />
+<div class="flex-caption">
+<div class="contentright">
+April 20, 2013
+</div>
+<h4>Data mining your reports</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
+</p>
+<a href="#">Continue Reading</a>
+</div>
+
+</li>
+
+<li>
+<img src="img/blogentry1.png" alt="blog slide 4" />
+<div class="flex-caption">
+<div class="contentright">
+April 20, 2013
+</div>
+<h4>Data mining your reports</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
+</p>
+<a href="#">Continue Reading</a>
+</div>
+
+</li>
+    
+</ul>
+    
+</section><!-- End of slider -->
+
+</div><!-- End of homepage slider section -->
+
+</div><!-- End of one half -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of content wrapper -->
+
+<!-- Start of bottom wrapper -->
+<div id="bottom_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of one fourth first -->
+<div class="one_fourth_first">
+<h5>Company</h5>
+
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Press</a></li>
+<li><a href="#">Partners</a></li>
+<li><a href="#">Employment Opportunities</a></li>
+</ul>
+
+</div><!-- End of one fourth first -->
+
+<!-- Start of one fourth -->
+<div class="one_fourth">
+<h5>Resources</h5>
+
+<ul>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Showcases</a></li>
+</ul>
+
+</div><!-- End of one fourth -->
+
+<!-- Start of one fourth -->
+<div class="one_fourth">
+<h5>Get in touch</h5>
+
+<ul>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Staff Directory</a></li>
+</ul>
+
+</div><!-- End of one fourth -->
+
+<!-- Start of one fourth -->
+<div class="one_fourth">
+<h5>Legal</h5>
+
+<ul>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Staff Directory</a></li>
+</ul>
+
+</div><!-- End of one fourth -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of bottom wrapper -->
+
+<!-- Start of copyright wrapper -->
+<div id="copyright_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of copyright message -->
+<div class="copyright_message">
+Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+</div><!-- End of copyright message -->
+
+<!-- Start of social icons -->
+<div class="social_icons">
+
+<a href="#"><img src="img/social/white/dribbble.png" width="30" height="30" alt="Dribbble" /></a>
+<a href="#"><img src="img/social/white/facebook.png" width="30" height="30" alt="Facebook" /></a>
+<a href="#"><img src="img/social/white/gplus.png" width="30" height="30" alt="GooglePlus" /></a>
+<a href="#"><img src="img/social/white/instagram.png" width="30" height="30" alt="Instagram" /></a>
+<a href="#"><img src="img/social/white/linkedin.png" width="30" height="30" alt="LinkedIn" /></a>
+<a href="#"><img src="img/social/white/pinterest.png" width="30" height="30" alt="Pinterest" /></a>
+<a href="#"><img src="img/social/white/twitter.png" width="30" height="30" alt="Twitter" /></a>
+
+</div><!-- End of social icons -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of copyright wrapper -->
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

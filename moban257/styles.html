@@ -1,0 +1,665 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- *************************************************************************
+**************************   STYLE SHEET   *******************************
+************************************************************************** -->
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+
+<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+
+<title>Business Essentials - Styles</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+ <!-- *************************************************************************
+*****************                FAVICON               ********************
+************************************************************************** -->
+
+<link rel="shortcut icon" href="img/favicon.png" />
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+<!-- *************************************************************************
+**************************        JS       *******************************
+************************************************************************** -->
+<script type="text/javascript" src="js/jquery.js"> </script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"> </script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"> </script>
+<script type="text/javascript" src="js/hoverIntent.js"> </script>
+<script type="text/javascript" src="js/jquery.sfmenu.js"> </script>
+<script type="text/javascript" src="js/retina.js"> </script>
+<script type="text/javascript" src="js/custom.js"> </script>
+<script type="text/javascript" src="js/jquery.fancybox.js"> </script>
+
+
+
+<!-- *************************************************************************
+******************     THESE ARE THE SCRIPT CALLS    ***********************
+************************************************************************** -->
+<script type="text/javascript">
+jQuery(window).load(function() {
+	 
+// Create the dropdown base
+jQuery("<select />").appendTo(".topmenu");
+
+// Create default option "Go to..."
+jQuery("<option />", {
+ "selected": "selected",
+ "value"   : "",
+ "text"    : "Menu"
+}).appendTo(".topmenu select");
+
+// Populate dropdown with menu items
+jQuery(".topmenu a").each(function() {
+var el = jQuery(this);
+jQuery("<option />", {
+   "value"   : el.attr("href"),
+   "text"    : el.text()
+}).appendTo(".topmenu select");
+});
+
+// To make dropdown actually work
+// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+jQuery(".topmenu select").change(function() {
+window.location = jQuery(this).find("option:selected").val();
+});
+
+jQuery('.fancybox').fancybox();
+	
+});
+	
+</script>
+
+</head>
+	<body>
+
+
+<!-- Start of top wrapper -->
+<div id="top_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of topsubmenu -->
+<div class="topsubmenu">
+
+<ul>
+<li><a href="#">Work With Us</a></li>
+<li><a href="#">Development Cycle</a></li>
+<li><a href="#">Affiliates</a></li>
+<li><a href="#">Client Login</a></li>
+</ul>
+
+</div><!-- End of topsubmenu -->
+
+<!-- Start of searchbox -->
+<div id="searchbox">
+
+<!-- Start of search box -->
+
+<form role="search" method="get" id="searchform" action="#">
+
+<input type="text" value="search" id="searchBox" name="s"  onblur="if(this.value == '') { this.value = 'search'; }" onFocus="if(this.value == 'search') { this.value = ''; }" />
+<span class="searchme"></span>
+</form>
+
+<!-- End of searchbox -->
+
+</div><!-- End of searchbox -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of top wrapper -->
+
+<!-- Start of header wrapper -->
+<div id="header_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of logo -->
+<div id="logo">
+<a href="#"><img src="img/toplogo.png" width="213" height="33" alt="Business Essentials" /></a>
+
+</div><!-- End of logo -->
+
+<!-- Start of top menu wrapper -->
+<div class="topmenuwrapper">
+
+<!-- Start of topmenu -->
+<nav class="topmenu"> 
+ 
+<ul class="sf-menu">
+
+<li><a href="index.html">Home</a>
+
+<ul class="sub-menu">
+<li><a href="index2.html">Alternative Home</a></li>
+<li><a href="columns.html">Columns</a></li>
+<li><a class="active" href="styles.html">Styles</a></li>
+<li><a href="rightsidebar.html">Right Sidebar</a></li>
+<li><a href="leftsidebar.html">Left Sidebar</a></li>
+<li><a href="fullwidth.html">Full Width</a></li>
+</ul>
+
+</li>
+        
+<li><a href="careers.html">Careers</a>
+<ul class="sub-menu">
+<li><a href="careers-single.html">Careers Single</a></li>
+</ul>
+</li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="staff.html">Staff</a>
+<ul class="sub-menu">
+<li><a href="staff-single.html">Staff Single</a></li>
+</ul>
+</li>
+
+<li><a href="case-studies.html">Case Studies</a>
+<ul class="sub-menu">
+<li><a href="casestudies-single.html">Case Studies Single</a></li>
+</ul>
+</li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav><!-- End of topmenu -->
+
+<!-- Start of header phone -->
+<div class="header_phone">
+Toll Free: 0800 123 456 7890
+</div><!-- End of header phone -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of top menu wrapper -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of header wrapper -->
+
+<!-- Start of breadcrumb wrapper -->
+<div class="breadcrumb_wrapper">
+
+<!-- Start of breadcrumb -->
+<div class="breadcrumb">
+
+<ul>
+<li><a href="index.html">Home</a> &nbsp; / &nbsp;</li>
+<li>Styles</li>
+
+</ul>
+
+</div><!-- End of breadcrumb -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of breadcrumb wrapper -->
+
+<!-- Start of content wrapper -->
+<div id="contentwrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of intro -->
+<div class="intro">
+This is an example of intro text.  Want to make the beginning paragraph text stand out? Just wrap your text in this "intro" shortcode from the HTML editor tab.
+
+</div><!-- End of intro -->
+
+<hr /> 
+
+<p>This is an example of paragraph text.  The environment, after all, is where we all meet, where we all where we all have a mutual interest. It is one thing that all of us share. It is not only a mirror of ourselves, but a focusing lens on what we can become.  <a href="#">And here is a link.</a></p>
+
+<hr />
+
+<h1>Example of H1 Title</h1>
+<h2>Example of H2 Title</h2>
+<h3>Example of H3 Title</h3>
+<h4>Example of H4 Title</h4>
+<h5>Example of H5 Title</h5>
+<h6>Example of H6 Title</h6>
+
+<hr />
+
+<!-- Start of quote -->
+<div class="quote">
+"Earth provides enough to satisfy every man's needs, but not every man's greed. - Mahatma Gandhi"
+
+</div><!-- End of quote -->
+
+<hr />
+
+<p><a class="fancybox" href="img/sliderimage1.png" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="img/sliderimage1.png" width="300" height="169" alt="Lakes" title="Lakes" class="alignright" /></a>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+<ul>
+	<li><a href="#">Example of an linkable unordered list item</a></li>
+	<li>Example of an unordered list item</li>
+	<li>Example of an unordered list item</li>
+</ul>
+
+<hr />
+
+<p><a class="fancybox" href="img/casestudies_large.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="img/casestudies_large.jpg" width="300" height="169" alt="gallery image 2" title="slide1" class="alignleft" /></a>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+<ul>
+	<li><a href="#">Example of an linkable unordered list item</a></li>
+	<li>Example of an unordered list item</li>
+	<li>Example of an unordered list item</li>
+</ul>
+
+<hr />
+
+<!-- Start of pullquoteleft -->
+<div class="pullquoteleft">
+The sun, the moon and the stars would have disappeared long ago… had they happened to be within the reach of predatory human hands.
+
+</div><!-- End of pullquoteleft -->
+
+<p>Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam.</p>
+
+<hr />
+
+<!-- Start of pullquoteright -->
+<div class="pullquoteright">
+Humans merely share the Earth. We can only protect the land, not own it.
+
+</div><!-- End of pullquoteright --> 
+
+<p>Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam.</p>
+
+<hr />
+
+<!-- Start of one half first -->
+<div class="one_half_first">
+
+<!-- Start of alert green -->
+<div class="alert_green">
+Stay calm and don't panic - everything is green for go!
+
+</div><!-- End of alert green -->
+
+<!-- Start of alert red -->
+<div class="alert_red">
+I am soo important said the red alert box!
+
+</div><!-- End of alert red -->
+
+</div><!-- End of one half first -->
+
+<!-- Start of one half -->
+<div class="one_half">
+
+<!-- Start of alert yellow -->
+<div class="alert_yellow">
+I think I should caution you about something!
+
+</div><!-- End of alert yellow -->
+
+<!-- Start of alert blue -->
+<div class="alert_blue">
+Ah relax other colors, there's information on the way.
+
+</div><!-- End of alert blue -->
+
+</div><!-- End of one half -->
+
+<hr />
+
+<ul class="tabs">
+            
+<li><a href="#tab1">Tab 1</a></li>
+<li><a href="#tab2">Tab 2</a></li>
+<li><a href="#tab3">Tab 3</a></li>
+
+</ul>
+
+<!-- Start of tab container -->
+<div class="tab_container">
+
+<!-- ************  START OF TABBED CONTENT AREA 1  ************* -->
+
+<!-- Start of tab1 tab content -->
+<div id="tab1" class="tab_content">
+<h5>Tab Content 1</h5>
+<p>The environment, after all, is where we all meet, where we all where we all have a mutual interest. It is one thing that all of us share. It is not only a mirror of ourselves, but a focusing lens on what we can become. <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+</div><!-- End of tab1 tab content -->
+
+<!-- ************  START OF TABBED CONTENT AREA 2  ************* -->
+
+<!-- Start of tab2 tab content -->
+<div id="tab2" class="tab_content">
+<h5>Tab Content 2</h5>
+<p>"We are such spendthrifts with our lives, the trick of living is to slip on and off the planet with the least fuss you can muster. I'm not running for sainthood. I just happen to think that in life we need to be a little like the farmer, who puts back into the soil what he takes out."
+― Paul Newman. <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+</div><!-- End of tab2 tab content -->
+
+
+<!-- ************  START OF TABBED CONTENT AREA 3  ************* -->
+
+<!-- Start of tab3 tab content -->
+<div id="tab3" class="tab_content">
+<h5>Tab Content 3</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+</div><!-- End of tab3 tab content -->
+
+</div><!-- End of tab container -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+<hr />
+
+<!-- Start of accordion button -->
+<div class="accordionButton" id="open">Karl Pilkington
+
+</div><!-- End of accordion button -->
+
+<!-- Start of accordion content -->
+<div class="accordionContent">
+<p>"Jellyfish are 97% water or something, so how much are they doing (to help the Earth)? Just give them another 3% and make them water. It's more useful."</p>
+
+</div><!-- End of accordion content -->
+
+<!-- Start of accordion button -->
+<div class="accordionButton">T.S. Eliot
+
+</div><!-- End of accordion button -->
+
+<!-- Start of accordion content -->
+<div class="accordionContent">
+<p>"We are being made aware that the organization of society on the principle of private profit, as well as public destruction, is leading both to the deformation of humanity by unregulated industrialism, and to the exhaustion of natural resources, and that a good deal of our material progress is a progress for which succeeding generations may have to pay dearly."</p>
+
+</div><!-- End of accordion content -->
+
+<!-- Start of accordion button -->
+<div class="accordionButton">Pope John Paul II
+
+</div><!-- End of accordion button -->
+
+<!-- Start of accordion content -->
+<div class="accordionContent">
+<p>"The earth will not continue to offer its harvest, except with faithful stewardship. We cannot say we love the land and then take steps to destroy it for use by future generations." </p>
+
+</div><!-- End of accordion content -->
+
+<!-- Start of accordion button -->
+<div class="accordionButton">Theodore Roosevelt
+
+</div><!-- End of accordion button -->
+
+<!-- Start of accordion content -->
+<div class="accordionContent">
+<p>"To waste, to destroy our natural resources, to skin and exhaust the land instead of using it so as to increase its usefulness, will result in undermining in the days of our children the very prosperity which we ought by right to hand down to them amplified and developed." </p>
+
+</div><!-- End of accordion content -->
+
+<!-- Start of accordion button -->
+<div class="accordionButton">Walt Disney Company
+
+</div><!-- End of accordion button -->
+
+<!-- Start of accordion content -->
+<div class="accordionContent">
+<p>"Landscapes of great wonder and beauty lie under our feet and all around us. They are discovered in tunnels in the ground, the heart of flowers, the hollows of trees, fresh-water ponds, seaweed jungles between tides, and even drops of water. Life in these hidden worlds is more startling in reality than anything we can imagine. How could this earth of ours, which is only a speck in the heavens, have so much variety of life, so many curious and exciting creatures?" </p>
+
+</div><!-- End of accordion content -->
+
+<!-- Start of accordion button -->
+<div class="accordionButton">Quoted in Time
+
+</div><!-- End of accordion button -->
+
+<!-- Start of accordion content -->
+<div class="accordionContent">
+<p>"Don't blow it - good planets are hard to find."</p>
+
+</div><!-- End of accordion content -->
+
+
+
+<!-- Start of one third first -->
+<div class="one_third_first">
+
+<!-- Start of button red -->
+<div class="button_red">
+<a href="http://google.com/default.htm">Button Red</a>
+
+</div><!-- end of button red -->
+
+<div class="clear"></div>
+
+<!-- Start of button red image -->
+<div class="button_red_image">
+<a href="http://google.com/default.htm">Button Red</a>
+
+</div><!-- end of button red image -->
+
+</div><!-- End of one third first -->
+
+<!-- Start of one third -->
+<div class="one_third">
+
+<!-- Start of button green -->
+<div class="button_green">
+<a href="#">Button Green</a>
+
+</div><!-- End of button green -->
+
+<div class="clear"></div>
+
+<!-- Start of button green image -->
+<div class="button_green_image">
+<a href="#">Button Green</a>
+
+</div><!-- End of button green image -->
+
+</div><!-- End of one third -->
+
+<!-- Start of one third -->
+<div class="one_third">
+
+<!-- Start of button blue -->
+<div class="button_blue">
+<a href="#">Button Blue</a>
+
+</div><!-- End of button blue -->
+
+<div class="clear"></div>
+
+<!-- Start of button blue image -->
+<div class="button_blue_image">
+<a href="#">Button Blue</a>
+
+</div><!-- End of button blue image -->
+
+</div><!-- End of one third -->
+
+<hr />
+
+<!-- Start of one half first -->
+<div class="one_half_first">
+<ol>
+	<li>Ordered list item</li>
+	<li>Ordered list item</li>
+	<li>Ordered list item</li>
+	<li>Ordered list item</li>
+	<li>Ordered list item</li>
+</ol>
+
+</div><!-- End of one half first -->
+
+<!-- Start of one half -->
+<div class="one_half">
+<ol>
+	<li><a href="#">Linked ordered list item</a></li>
+	<li><a href="#">Linked ordered list item</a></li>
+	<li><a href="#">Linked ordered list item</a></li>
+	<li><a href="#">Linked ordered list item</a></li>
+	<li><a href="#">Linked ordered list item</a></li>
+</ol>
+
+</div><!-- End of one half -->
+
+<!-- Start of one half first -->
+<div class="one_half_first">
+<ul>
+	<li>Unordered list item</li>
+	<li>Unordered list item</li>
+	<li>Unordered list item</li>
+	<li>Unordered list item</li>
+	<li>Unordered list item</li>
+</ul>
+
+</div><!-- End of one half first -->
+
+<!-- Start of one half -->
+<div class="one_half">
+<ul>
+	<li><a href="#">Linked unordered list item</a></li>
+	<li><a href="#">Linked unordered list item</a></li>
+	<li><a href="#">Linked unordered list item</a></li>
+	<li><a href="#">Linked unordered list item</a></li>
+	<li><a href="#">Linked unordered list item</a></li>
+</ul>
+
+</div><!-- End of one half -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of content wrapper -->
+
+<!-- Start of bottom wrapper -->
+<div id="bottom_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of one fourth first -->
+<div class="one_fourth_first">
+<h5>Company</h5>
+
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Press</a></li>
+<li><a href="#">Partners</a></li>
+<li><a href="#">Employment Opportunities</a></li>
+</ul>
+
+</div><!-- End of one fourth first -->
+
+<!-- Start of one fourth -->
+<div class="one_fourth">
+<h5>Resources</h5>
+
+<ul>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Showcases</a></li>
+</ul>
+</div><!-- End of one fourth -->
+
+<!-- Start of one fourth -->
+<div class="one_fourth">
+<h5>Get in touch</h5>
+
+<ul>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Staff Directory</a></li>
+</ul>
+
+</div><!-- End of one fourth -->
+
+<!-- Start of one fourth -->
+<div class="one_fourth">
+<h5>Legal</h5>
+
+<ul>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Staff Directory</a></li>
+</ul>
+
+</div><!-- End of one fourth -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of bottom wrapper -->
+
+<!-- Start of copyright wrapper -->
+<div id="copyright_wrapper">
+
+<!-- Start of content wrapper -->
+<div class="content_wrapper">
+
+<!-- Start of copyright message -->
+<div class="copyright_message">
+&copy; 2013 <a href="#">Jonathan Atkinson</a> - Handcrafted in the U.S.A.
+
+</div><!-- End of copyright message -->
+
+<!-- Start of social icons -->
+<div class="social_icons">
+
+<a href="#"><img src="img/social/white/dribbble.png" width="30" height="30" alt="Dribbble" /></a>
+<a href="#"><img src="img/social/white/facebook.png" width="30" height="30" alt="Facebook" /></a>
+<a href="#"><img src="img/social/white/gplus.png" width="30" height="30" alt="GooglePlus" /></a>
+<a href="#"><img src="img/social/white/instagram.png" width="30" height="30" alt="Instagram" /></a>
+<a href="#"><img src="img/social/white/linkedin.png" width="30" height="30" alt="LinkedIn" /></a>
+<a href="#"><img src="img/social/white/pinterest.png" width="30" height="30" alt="Pinterest" /></a>
+<a href="#"><img src="img/social/white/twitter.png" width="30" height="30" alt="Twitter" /></a>
+
+</div><!-- End of social icons -->
+
+</div><!-- End of content wrapper -->
+
+<!-- Clear Fix --><div class="clear"></div>
+
+</div><!-- End of copyright wrapper -->
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+
