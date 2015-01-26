@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 
 <html>
 
@@ -28,7 +28,7 @@
    </script>
 <![endif]-->
 
-<title>感知计算实验室 - High智</title>
+<title>感知计算实验室 - High云</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
@@ -194,7 +194,7 @@ jQuery('.fancybox').fancybox();
 </ul>
 </li>
 
-<li><a href="../index.html#team" >科研团队</a>
+<li><a href="../index.html#team">科研团队</a>
 <!--<ul class="sub-menu">
 <li><a href="staff-single.html">Staff Single</a></li>
 </ul>-->
@@ -233,8 +233,8 @@ Toll Free: 0800 123 456 7890
 
 <ul>
 <li><a href="index.html">主页</a> &nbsp; / &nbsp;</li>
-<li><a href="">实验室成果</a> &nbsp; / &nbsp;</li>
-<li>High智</li>
+<li><a href="">实验室新闻</a> &nbsp; / &nbsp;</li>
+<li>团队聚餐</li>
 
 </ul>
 
@@ -253,82 +253,14 @@ Toll Free: 0800 123 456 7890
 
 <br><br>
 
-<h2>HIGH智：目标追踪</h2>
+<h2>实验室聚餐</h2>
 
-<h3>单目标追踪</h3>
-<h5>技术背景</h5>
+<h5></h5>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;目标追踪是计算机视觉和人机交互领域的一项基本技术。车辆导航，视频监控，自动驾驶等智能应用都需要目标追踪的技术支持。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; 目标追踪是在给定目标的位置信息之后，应用目标的图像特征对目标接下来的位置进行追踪的过程。目标追踪的难点在于光照，目标的姿势和尺寸，背景等一系列的变化因素。如何在多变的因素中准确定位到不变的目标使得目标追踪成为一个具有挑战性的难题。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; 目标追踪当前面临的一个重要问题是遮挡问题。目标被遮挡之后，目标的信息也大量的丢失。如何在此时精确的追踪目标是一个重点和难点。基于遮挡预测的视频追踪技术首先对遮挡进行了预测，然后利用遮挡信息进行追踪和模板的更新。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;2015年1月20日，感知计算实验室团队交流会暨团队迎新聚餐在西丽镇“天下湘军”饭店举行。聚餐中，大家畅所欲言，谈日常生活、学习，交流心得体会，师兄师姐为师弟师妹排忧解惑。最后，何老师分析了当前的科研状况，鼓舞大家追求自己的理想。</p>
 
-<!--
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目标追踪是计算机视觉和人机交互领域的一项基本技术。车辆导航，视频监控，自动驾驶等智能应用都需要目标追踪的技术支持。
-目标追踪是在给定目标的位置信息之后，应用目标的图像特征对目标接下来的位置进行追踪的过程。目标追踪的难点在于光照，目标的姿势和尺寸，背景等一系列的变化因素。如何在多变的因素中准确定位到不变的目标使得目标追踪成为一个具有挑战性的难题。
-目标追踪当前面临的一个重要问题是遮挡问题。目标被遮挡之后，目标的信息也大量的丢失。如何在此时精确的追踪目标是一个重点和难点。基于遮挡预测的视频追踪技术首先对遮挡进行了预测，然后利用遮挡信息进行追踪和模板的更新。</p>
--->
-<h5>技术创新</h5>
+<center><img src="img/news/jucan.jpg" width="70%" height="70%" /></center>
 
-<ul style="list-style-type:circle">
-	<li>能够准确预测遮挡：通过多示例学习的思想对于目标和背景进行标记，之后用支持向量机训练分类器。该分类器能够较好的预测遮挡；</li>
-    <li>基于遮挡的联合追踪算法：通过遮挡信息，将判别模型与生成模型进行融合，充分利用两种模型的互补优势来进行追踪。联合的追踪算法能够较好的解决遮挡问题，并且不会发生漂移；</li>
-    <li>基于遮挡的模板更新策略：根据遮挡信息来指导模型的跟新，从而可以得到更精确的模板；</li>
-    
-</ul>
-<br>
-
-<img src="img/myimg/hizhi2.png" width="80%" height="80%"  />
-<br>
-<h5>结果展示</h5>
-<p>衡量指标-重叠率：追踪结果框与真实目标面积的重叠比率。通常来说改值大于0.5则认为跟踪成功。下表展示了本算与其它几个主流算法在不同测试集上的结果：
-</p>
-
-<img src="img/myimg/hizhi3.PNG" width="80%" height="80%"  />
-
-<br><br>
-
-<h3>多目标追踪</h3>
-<h5>技术背景</h5>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;多目标追踪是计算机视觉一项重要的基本技术，尤其是对于行人的多目标追踪。它可用于视频监控，数量统计，自动驾驶等应用中，具有重要的理论和应用价值。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; 多目标行人追踪是将每个目标在视频序列中的路径找出来，即追踪每个目标在每帧中的位置。当前，多目标追踪的主流框架是基于检测的追踪。该框架分为两步，第一步，将每帧中的目标检测出来；第二步，将帧序列中同一个目标连接起来。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; 多目标追踪面临的问题有，不可预知的目标数量，运算复杂度，目标的遮挡等。</p>
-
-<h5>技术创新</h5>
-
-<ul style="list-style-type:circle">
-	<li> 高追踪正确率：在多个数据库上，能达到较高的准确率；</li>
-    <li>有效的解决遮挡：对于目标与背景之间的遮挡以及目标与目标之间的遮挡都能有效；</li>
-    <li> 低运算复杂度：在有检测结果之后，追踪阶段能够达到每秒50帧以上的处理速度。可以在快速检测器的基础上，通过降低准确率可以实现实时追踪。</li>
-   
-</ul><br>
-<img src="img/myimg/hizhi.png" width="80%" height="80%"  />
-
-<br>
-<h5>结果展示</h5>
-<p>衡量指标-重叠率：追踪结果框与真实目标面积的重叠比率。通常来说改值大于0.5则认为跟踪成功。下表展示了本算与其它几个主流算法在不同测试集上的结果：
-</p>
-
-<!--<img src="img/myimg/hizhi3.PNG" width="80%" height="80%"  />-->
-<img src="img/myimg/hizhi4.PNG" width="80%" height="80%"  />
-
-<br>
-
-<!-- Start of one half first 
-<div class="one_half_first">
-<img src="img/myimg/dash1.PNG" width="718" height="368" alt="case study image 1" />
-
-</div><!-- End of one half first -->
-
-<!-- Start of one half 
-<div class="one_half">
-<img src="img/case-study-single2.jpg" width="475" height="289" alt="case study image 2" />
-
-</div><!-- End of one half -->
-
-
-
-<!-- Start of button red -->
 <div class="button_red">
 <a href="../index.html">返回</a>
 
